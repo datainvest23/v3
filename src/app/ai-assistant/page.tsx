@@ -1,4 +1,4 @@
-import AIAssistantForm from "@/components/AIAssistantForm";
+import AIAssistantChatBot from "@/components/AIAssistantChatBot";
 
 export default function AIAssistantPage() {
     return (
@@ -19,7 +19,7 @@ export default function AIAssistantPage() {
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="max-w-2xl mx-auto">
-                        <AIAssistantForm />
+                        <AIAssistantChatBot />
                     </div>
                 </div>
             </section>

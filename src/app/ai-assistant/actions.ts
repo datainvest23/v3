@@ -1,14 +1,17 @@
 'use server';
 
-import { generateMarketingIdeas, MarketingIdeasInput, MarketingIdeasOutput } from '@/ai/flows/marketing-problem-assistant';
+import { onboardingAssistant } from '@/ai/flows/marketing-problem-assistant';
+import type { OnboardingAssistantInput, OnboardingAssistantOutput } from '@/ai/schemas';
 
-export async function marketingIdeasAction(input: MarketingIdeasInput): Promise<MarketingIdeasOutput> {
+export async function onboardingAssistantAction(input: OnboardingAssistantInput): Promise<OnboardingAssistantOutput> {
   try {
-    const result = await generateMarketingIdeas(input);
+    const result = await onboardingAssistant(input);
     return result;
   } catch (error) {
-    console.error('Error generating marketing ideas:', error);
-    // In a real app, you might want to return a more specific error object
-    return { ideas: [] };
+    console.error('Error in onboarding assistant action:', error);
+    return {
+      response: "I'm sorry, but I've encountered an technical issue. Please try again in a moment.",
+      updatedState: input.currentState
+    };
   }
 }

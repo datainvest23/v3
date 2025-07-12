@@ -29,7 +29,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Mail className="h-6 w-6 text-primary" />
-                  <a href="mailto:contact@sym-agency.com" className="text-lg hover:text-primary">contact@sym-agency.com</a>
+                  <a href="mailto:contact@SYMplify.digital" className="text-lg hover:text-primary">contact@SYMplify.digital</a>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="h-6 w-6 text-primary" />

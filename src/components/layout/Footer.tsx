@@ -35,7 +35,7 @@ const Footer = () => {
             <div>
               <h4 className="font-headline font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-2 text-sm">
-                <li className="text-muted-foreground">contact@sym-agency.com</li>
+                <li className="text-muted-foreground">contact@SYMplify.digital</li>
                 <li className="text-muted-foreground">(555) 123-4567</li>
                 <li className="text-muted-foreground">123 Innovation Drive, Tech City</li>
               </ul>
