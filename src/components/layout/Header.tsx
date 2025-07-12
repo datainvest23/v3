@@ -38,6 +38,9 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
+          <Button asChild variant="outline" className="hidden md:inline-flex">
+            <Link href="/login">CLIENT LOGIN</Link>
+          </Button>
           <Button asChild className="hidden md:inline-flex">
             <Link href="/contact">Schedule Consultation</Link>
           </Button>
@@ -72,9 +75,14 @@ const Header = () => {
                       </Link>
                     ))}
                   </nav>
-                  <Button asChild className="mt-auto">
-                    <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Schedule Consultation</Link>
-                  </Button>
+                  <div className="mt-auto space-y-2">
+                    <Button asChild variant="outline" className="w-full">
+                      <Link href="/login" onClick={() => setIsMobileMenuOpen(false)}>CLIENT LOGIN</Link>
+                    </Button>
+                    <Button asChild className="w-full">
+                      <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Schedule Consultation</Link>
+                    </Button>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>

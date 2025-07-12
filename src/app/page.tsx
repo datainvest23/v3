@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <div>
               <Image 
-                src="https://placehold.co/600x800.png" 
+                src="/images/sym-bg.gif" 
                 alt="Integrated Service Pyramid" 
                 width={600} 
                 height={800}
