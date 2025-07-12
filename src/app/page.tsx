@@ -3,32 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChartIcon, BrainCircuitIcon, TargetIcon, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { GoogleGeminiEffectDemo } from '@/components/google-gemini-effect-demo';
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-primary/5 py-20 md:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4 tracking-tight">
-            End the Execution Gap.
-            <br />
-            Turn Strategy into Market Impact, Instantly.
-          </h1>
-          <p className="text-2xl text-primary/90 mb-4 font-headline">Intelligence Accelerated. Execution Perfected.</p>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">
-            SYM is the first marketing agency designed for the speed of leadership. We integrate real-time business intelligence with a powerful AI engine to close the costly gap between your vision and its flawless implementation.
-          </p>
-          <div className="flex justify-center gap-4">
-            <Button asChild size="lg">
-              <Link href="/how-it-works">See How It Works <ArrowRight className="ml-2 h-5 w-5" /></Link>
-            </Button>
-            <Button asChild size="lg" variant="outline">
-              <Link href="/contact">Schedule a Consultation</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* Google Gemini Effect Hero Section */}
+      <GoogleGeminiEffectDemo />
 
       {/* Problem/Solution Section */}
       <section className="py-16 md:py-24 bg-background">
